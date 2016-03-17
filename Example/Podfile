@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'DriftAnimationImageView_Example', :exclusive => true do
+  pod 'DriftAnimationImageView', :path => '../'
+end
+
+target 'DriftAnimationImageView_Tests', :exclusive => true do
+  pod 'DriftAnimationImageView', :path => '../'
+
+  pod 'FBSnapshotTestCase'
+end

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="DriftAnimationImageView_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FGl-Jj-Qed" customClass="DriftAnimationImageView" customModule="DriftAnimationImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="HiQ-BL-8l1">
+                                <rect key="frame" x="205" y="552" width="191" height="29"/>
+                                <segments>
+                                    <segment title="Multiple"/>
+                                    <segment title="Single"/>
+                                    <segment title="Stop"/>
+                                </segments>
+                                <color key="tintColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="valueChangedAction:" destination="vXZ-lx-hvc" eventType="valueChanged" id="2OA-xP-gnS"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FGl-Jj-Qed" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="1Ck-Fn-hWF"/>
+                            <constraint firstAttribute="trailing" secondItem="FGl-Jj-Qed" secondAttribute="trailing" id="5md-5C-N7t"/>
+                            <constraint firstItem="HiQ-BL-8l1" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="LxF-fr-lr8"/>
+                            <constraint firstItem="FGl-Jj-Qed" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="NfN-yE-MJ8"/>
+                            <constraint firstAttribute="bottom" secondItem="FGl-Jj-Qed" secondAttribute="bottom" id="ZWw-sh-6yT"/>
+                            <constraint firstAttribute="bottom" secondItem="HiQ-BL-8l1" secondAttribute="bottom" constant="20" id="wgy-Hf-u2m"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="FGl-Jj-Qed" id="8gM-Pu-vKw"/>
+                        <outlet property="segmentedControl" destination="HiQ-BL-8l1" id="75c-xD-W25"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
