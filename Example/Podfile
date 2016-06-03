@@ -8,5 +8,4 @@ end
 target 'DriftAnimationImageView_Tests', :exclusive => true do
   pod 'DriftAnimationImageView', :path => '../'
 
-  pod 'FBSnapshotTestCase'
 end
