@@ -1,11 +1,8 @@
-source 'https://github.com/CocoaPods/Specs.git'
-use_frameworks!
+platform :ios, '8.0'
 
-target 'DriftAnimationImageView_Example', :exclusive => true do
-  pod 'DriftAnimationImageView', :path => '../'
-end
+target 'Example' do
+  use_frameworks!
 
-target 'DriftAnimationImageView_Tests', :exclusive => true do
   pod 'DriftAnimationImageView', :path => '../'
 
 end

@@ -1,0 +1,16 @@
+PODS:
+  - DriftAnimationImageView (1.0.0)
+
+DEPENDENCIES:
+  - DriftAnimationImageView (from `../`)
+
+EXTERNAL SOURCES:
+  DriftAnimationImageView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DriftAnimationImageView: 59a073caf6cdc23895e590758de1a40e85c956fe
+
+PODFILE CHECKSUM: 2c5957e80f1e37fffdf1d2515ffb6612e0dd993c
+
+COCOAPODS: 1.2.1
