@@ -58,3 +58,7 @@ pod "DriftAnimationImageView"
 ## License
 
 **DriftAnimationImageView** is available under the MIT license. See the *LICENSE* file for more info.
+
+# Alternatives
+
+- [SKPanoramaView ](https://github.com/sachinkesiraju/SKPanoramaView)
